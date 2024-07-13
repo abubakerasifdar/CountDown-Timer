@@ -1,51 +1,62 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CountDown Timer Js 1st Projects</title>
+    <link rel="stylesheet" href="style.css">
+    
+    
 </head>
-<body>
-    <!-- count Down timer form -->
-     <div>
-        <div>
-            <label for="CountDownName">Your Count Down Name</label>
-            <input name="CountDownName" type="text">
-        </div>
-        <div>
-            <label for="CountDownName">Your Count Down Date</label>
-            <input name="CountDownName" type="date">
-        </div>
-        <div><button>Submit</button></div>
-     </div>
-     <!-- count down Timer itself -->
-      <div >
-        <div>
-            <h1>Your Count Down Time<h1>
-        </div>
-       <div >
-        <div>
-            <input type="text">
-            <span>Days</span>
-        </div>
-        <div>
-            <input type="text">
-            <span>Hours</span>
-        </div>
-        <div>
-            <input type="text">
-            <span>Minutes</span>
-        </div>
-        <div>
-            <input type="text">
-            <span>Seconds</span>
-        </div>
-       </div>
-      </div>
-      <!-- count down timer complete sections -->
-       <div>
-        <h1>Timer Complete</h1>
 
-       </div>
+<body>
+    <h1 class="main-heading" >WellCome in Abubaker Asif Js World</h1>
+    <!-- count Down timer form -->
+    <div  class="counter-form" id="counter-form" >
+    <form id="counter-forms">
+        <div>
+            <h3>Please Enter CounterDown Name</h3>
+            <input type="text" >
+        </div>
+            <div>
+                <label for="CountDownName">Your Count Down Date</label>
+                <input name="CountDownName" type="date">
+            </div>
+            <button >Submit</button>
+    </form>
+    </div>
+    <!-- count down Timer itself -->
+    <div class="CountDown-main counterDown-main-1" id="counterDown-main" hidden >
+        <h1 class="countDown-title" id="countDown-titles" >Your Count Down Time<h1>
+
+                <div class="d-flex">
+                    <div class="timerinput">
+                        <h2 class="inputtimer">1</h2>
+                        <h4 class="inputtimerlable">Days</h4>
+                    </div>
+                    <div class="timerinput">
+                        <h2 class="inputtimer">2</h2>
+                        <h4 class="inputtimerlable">Hours</h4>
+                    </div>
+                    <div class="timerinput">
+                        <h2 class="inputtimer">3</h2>
+                        <h4 class="inputtimerlable">Minutes</h4>
+                    </div>
+                    <div class="timerinput">
+                        <h2 class="inputtimer">4</2>
+                        <h4 class="inputtimerlable">Seconds</h4>
+                    </div>
+                </div>
+                <button id="counter-reset">Reset</button>
+    </div>
+    <!-- count down timer complete sections -->
+    <div class="Timer-complete" hidden>
+        <h1 >Timer Complete</h1>
+        <h3 id="counter-finished">Counter Finished On 27-07-2024</h3>
+        <button id="create-new-countdown">Create New CountDown</button>
+    </div>
+    <script src="app.js"></script>
 </body>
+
 </html>
