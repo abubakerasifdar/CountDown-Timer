@@ -14,14 +14,14 @@
     <h1 class="main-heading" >WellCome in Abubaker Asif Js World</h1>
     <!-- count Down timer form -->
     <div  class="counter-form" id="counter-form" >
-    <form id="counter-forms">
+    <form id="counter-forms" method="post">
         <div>
             <h3>Please Enter CounterDown Name</h3>
             <input type="text" >
         </div>
             <div>
                 <label for="CountDownName">Your Count Down Date</label>
-                <input name="CountDownName" type="date">
+                <input name="CountDownName" id="datepicker" type="date">
             </div>
             <button >Submit</button>
     </form>
@@ -51,7 +51,7 @@
                 <button id="counter-reset">Reset</button>
     </div>
     <!-- count down timer complete sections -->
-    <div class="Timer-complete" hidden>
+    <div class="Timer-complete"  id="Timer-completes" hidden>
         <h1 >Timer Complete</h1>
         <h3 id="counter-finished">Counter Finished On 27-07-2024</h3>
         <button id="create-new-countdown">Create New CountDown</button>
